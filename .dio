@@ -10,6 +10,15 @@
                 <mxCell id="27" value="routes.rb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="50" y="150" width="60" height="30" as="geometry"/>
                 </mxCell>
+                <mxCell id="29" value="&lt;font color=&quot;#24292e&quot; face=&quot;ricty diminished, menlo, monaco, courier new, monospace&quot;&gt;&lt;span style=&quot;font-size: 15px ; background-color: rgb(255 , 255 , 255)&quot;&gt;def index&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px&quot;&gt;end&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="320" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="messages_controller.rg" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="290" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="ルートパスにアクセスがあった時、messagesコントローラーのindexアクションが呼び出される" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="110" width="310" height="30" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
