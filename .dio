@@ -1,0 +1,157 @@
+<mxfile host="65bd71144e">
+    <diagram id="EnbynemxdXsiWRhLjwJF" name="ページ1">
+        <mxGraphModel dx="1894" dy="943" grid="1" gridSize="10" guides="0" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="26" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; color: rgb(36 , 41 , 46) ; font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px&quot;&gt;root &lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px ; color: rgb(0 , 92 , 197)&quot;&gt;to:&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; color: rgb(36 , 41 , 46) ; font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px ; color: rgb(3 , 47 , 98)&quot;&gt;&quot;messages#index&quot;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="180" width="330" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="routes.rb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="150" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;font color=&quot;#24292e&quot; face=&quot;ricty diminished, menlo, monaco, courier new, monospace&quot;&gt;&lt;span style=&quot;font-size: 15px ; background-color: rgb(255 , 255 , 255)&quot;&gt;def index&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px&quot;&gt;end&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="320" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="messages_controller.rg" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="290" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="ルートパスにアクセスがあった時、messagesコントローラーのindexアクションが呼び出される" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="110" width="310" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="&lt;font color=&quot;#24292e&quot; face=&quot;ricty diminished, menlo, monaco, courier new, monospace&quot;&gt;&lt;span style=&quot;font-size: 15px&quot;&gt;before_action :authenticate_user!&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;color: rgb(36, 41, 46); font-family: &amp;quot;ricty diminished&amp;quot;, menlo, monaco, &amp;quot;courier new&amp;quot;, monospace; font-size: 15px;&quot;&gt;before_action :configure_permitted_parameters, if: :devise_controller?&lt;/span&gt;&lt;div style=&quot;color: rgb(36, 41, 46); font-family: &amp;quot;ricty diminished&amp;quot;, menlo, monaco, &amp;quot;courier new&amp;quot;, monospace; font-size: 15px; line-height: 23px;&quot;&gt;&lt;br&gt;&lt;div&gt;private&lt;/div&gt;&lt;div&gt;def configure_permitted_parameters&lt;/div&gt;&lt;div&gt;&amp;nbsp;devise_parameter_sanitizer.permit(:sign_up, keys: [:name])&lt;/div&gt;&lt;div&gt;end&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelBackgroundColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="590" width="580" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="application_controller.rb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="560" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="ログインしていない場合" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
+                    <mxGeometry x="380" y="595" width="310" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;font color=&quot;#3333ff&quot;&gt;http://localhost:3000/&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
+                    <mxGeometry x="35" y="490" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="endArrow=classic;html=1;fontColor=#3333FF;labelBorderColor=none;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="300" y="630" as="sourcePoint"/>
+                        <mxPoint x="720" y="630" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="" style="endArrow=classic;html=1;fontColor=#3333FF;labelBorderColor=none;fontSize=11;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="33">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="105" y="520" as="sourcePoint"/>
+                        <mxPoint x="520" y="520" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="ログイン画面に遷移する" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="590" width="310" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="サインアップ・ログイン機能" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="460" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="app/views/devise/sessions/new.htmi.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="620" width="230" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="userモデルにアクセス&lt;br&gt;↓&lt;br&gt;usersテーブルのnameを保存" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
+                    <mxGeometry x="-145" y="640" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="事前準備" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="70" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="ユーザー情報編集機能" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="15" y="820" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; color: rgb(36 , 41 , 46) ; font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px&quot;&gt;root &lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px ; color: rgb(0 , 92 , 197)&quot;&gt;to:&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; color: rgb(36 , 41 , 46) ; font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px ; color: rgb(3 , 47 , 98)&quot;&gt;&quot;messages#index&quot;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;color: rgb(36 , 41 , 46) ; background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px ; line-height: 23px&quot;&gt;resources :users, only: [:edit, :update]&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="890" width="330" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="routes.rb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="860" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="&lt;font color=&quot;#24292e&quot; face=&quot;ricty diminished, menlo, monaco, courier new, monospace&quot;&gt;&lt;span style=&quot;font-size: 15px ; background-color: rgb(255 , 255 , 255)&quot;&gt;def edit&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px&quot;&gt;end&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 23px&quot;&gt;&lt;div&gt;def update&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 23px&quot;&gt;&lt;div&gt;&amp;nbsp;if current_user.update(user_params)&lt;/div&gt;&lt;div&gt;&amp;nbsp; redirect_to root_path&lt;/div&gt;&lt;div&gt;&amp;nbsp;else&lt;/div&gt;&lt;div&gt;&amp;nbsp; render :edit&lt;/div&gt;&lt;div&gt;&amp;nbsp;end&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;end&lt;/div&gt;&lt;br&gt;&lt;div&gt;private&lt;/div&gt;&lt;br&gt;&lt;div&gt;def user_params&lt;/div&gt;&lt;div&gt;&amp;nbsp;params.require(:user).permit(:name, :email)&lt;/div&gt;&lt;div&gt;end&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="1020" width="380" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="users_controller.rg" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="990" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="&lt;font color=&quot;#3333ff&quot;&gt;http://localhost:3000/users/1/edit&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
+                    <mxGeometry x="25" y="840" width="210" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="" style="endArrow=classic;html=1;fontColor=#3333FF;labelBorderColor=none;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="204" y="359.09" as="sourcePoint"/>
+                        <mxPoint x="624" y="359.09" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="63" value="index.htmi.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="350" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="ルートパスにアクセスがあった時、usersコントローラーのedit,updateアクションが呼び出される" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="890" width="310" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="" style="endArrow=classic;html=1;fontColor=#3333FF;labelBorderColor=none;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="110" y="1040" as="sourcePoint"/>
+                        <mxPoint x="530" y="1040" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" value="edit.htmi.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="1030" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="userモデルにアクセス&lt;br&gt;↓&lt;br&gt;usersテーブルのname,emailを更新" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;labelBackgroundColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="-205" y="1069" width="220" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="" style="endArrow=classic;html=1;fontColor=#3333FF;labelBorderColor=none;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="219.99999999999977" y="1140" as="sourcePoint"/>
+                        <mxPoint x="640" y="1140" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="69" value="" style="endArrow=classic;html=1;fontColor=#3333FF;labelBorderColor=none;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="219.99999999999977" y="1190" as="sourcePoint"/>
+                        <mxPoint x="640" y="1190" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="70" value="更新が成功した場合" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;labelBackgroundColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="1100" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="更新が失敗した場合" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;labelBackgroundColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="1150" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="root_path&lt;br&gt;つまりindex.html.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="650" y="1130" width="170" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="edit.htmi.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="1180" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="&lt;div style=&quot;color: rgb(36 , 41 , 46) ; background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px ; line-height: 23px&quot;&gt;&amp;lt;%= link_to current_user.name, edit_user_path(current_user) %&amp;gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="1460" width="490" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="_side_bar.html.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="1430" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="ユーザー名(current_user.name)にアクセス&lt;br&gt;↓&lt;br&gt;usersコントローラーのeditアクション&lt;br&gt;↓&lt;br&gt;edit.html.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;labelBackgroundColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="-245" y="1450" width="275" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="&lt;div style=&quot;color: rgb(36 , 41 , 46) ; background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px ; line-height: 23px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 23px&quot;&gt;&amp;lt;%= link_to &lt;span style=&quot;color: #032f62&quot;&gt;&quot;ログアウト&quot;&lt;/span&gt;, destroy_user_session_path, method: :delete, class: &lt;span style=&quot;color: #032f62&quot;&gt;'btn'&lt;/span&gt; %&amp;gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="1660" width="650" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="edit.html.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="1630" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="ログアウト機能" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="1590" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="ログアウト(destroy_user_session_path)にアクセス&lt;br&gt;↓&lt;br&gt;sessionsコントローラーのdestroyアクション&lt;br&gt;↓&lt;br&gt;app/views/sessions/new.html.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;labelBackgroundColor=default;labelBorderColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="-280" y="1650" width="305" height="100" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
