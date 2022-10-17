@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="EnbynemxdXsiWRhLjwJF" name="ページ1">
-        <mxGraphModel dx="1894" dy="943" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1894" dy="943" grid="1" gridSize="10" guides="0" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -138,6 +138,18 @@
                 </mxCell>
                 <mxCell id="76" value="ユーザー名(current_user.name)にアクセス&lt;br&gt;↓&lt;br&gt;usersコントローラーのeditアクション&lt;br&gt;↓&lt;br&gt;edit.html.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;labelBackgroundColor=default;" vertex="1" parent="1">
                     <mxGeometry x="-245" y="1450" width="275" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="&lt;div style=&quot;color: rgb(36 , 41 , 46) ; background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px ; line-height: 23px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 23px&quot;&gt;&amp;lt;%= link_to &lt;span style=&quot;color: #032f62&quot;&gt;&quot;ログアウト&quot;&lt;/span&gt;, destroy_user_session_path, method: :delete, class: &lt;span style=&quot;color: #032f62&quot;&gt;'btn'&lt;/span&gt; %&amp;gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="1660" width="650" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="edit.html.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="1630" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="ログアウト機能" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="1590" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="ログアウト(destroy_user_session_path)にアクセス&lt;br&gt;↓&lt;br&gt;sessionsコントローラーのdestroyアクション&lt;br&gt;↓&lt;br&gt;app/views/sessions/new.html.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;labelBackgroundColor=default;labelBorderColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="-280" y="1650" width="305" height="100" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
