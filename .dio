@@ -172,6 +172,9 @@
                 <mxCell id="87" value="ルートパスにアクセスがあった時、roomsコントローラーのnew,createアクションが呼び出される" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
                     <mxGeometry x="380" y="1950" width="330" height="30" as="geometry"/>
                 </mxCell>
+                <mxCell id="88" value="画面表示" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="2220" width="180" height="30" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
