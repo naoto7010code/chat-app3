@@ -160,8 +160,8 @@
                 <mxCell id="83" value="routes.rb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="40" y="1850" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="84" value="&lt;div style=&quot;color: rgb(36 , 41 , 46) ; background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px ; line-height: 23px&quot;&gt;&lt;div&gt;def new&lt;/div&gt;&lt;div&gt;&amp;nbsp;@&lt;span style=&quot;color: #d73a49&quot;&gt;room&lt;/span&gt; = Room.new&lt;/div&gt;&lt;div&gt;end&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="2090" width="220" height="80" as="geometry"/>
+                <mxCell id="84" value="&lt;div style=&quot;color: rgb(36 , 41 , 46) ; background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px ; line-height: 23px&quot;&gt;&lt;div&gt;def new&lt;/div&gt;&lt;div&gt;&amp;nbsp;@&lt;span style=&quot;color: #d73a49&quot;&gt;room&lt;/span&gt; = Room.new&lt;/div&gt;&lt;div&gt;end&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 23px&quot;&gt;&lt;div&gt;def create&lt;/div&gt;&lt;div&gt;&amp;nbsp;@&lt;span style=&quot;color: #d73a49&quot;&gt;room&lt;/span&gt; = Room.new(room_params)&lt;/div&gt;&lt;div&gt;&amp;nbsp;if @room.save&lt;/div&gt;&lt;div&gt;&amp;nbsp; redirect_to root_path&lt;/div&gt;&lt;div&gt;&amp;nbsp;else&lt;/div&gt;&lt;div&gt;&amp;nbsp; render :new&lt;/div&gt;&lt;div&gt;&amp;nbsp;end&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;ricty diminished&amp;#34; , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 23px&quot;&gt;end&lt;/div&gt;&lt;br&gt;&lt;div&gt;private&lt;/div&gt;&lt;br&gt;&lt;div&gt;def room_params&lt;/div&gt;&lt;div&gt;&amp;nbsp;params.require(:room).permit(:name, user_ids: [])&lt;/div&gt;&lt;div&gt;end&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="2090" width="390" height="440" as="geometry"/>
                 </mxCell>
                 <mxCell id="85" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;ricty diminished&amp;quot;, menlo, monaco, &amp;quot;courier new&amp;quot;, monospace; font-size: 15px; line-height: 23px;&quot;&gt;&lt;span style=&quot;&quot;&gt;rooms_controller.rb&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
                     <mxGeometry x="40" y="2060" width="150" height="30" as="geometry"/>
@@ -172,8 +172,37 @@
                 <mxCell id="87" value="ルートパスにアクセスがあった時、roomsコントローラーのnew,createアクションが呼び出される" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
                     <mxGeometry x="380" y="1950" width="330" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="88" value="画面表示" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="2220" width="180" height="30" as="geometry"/>
+                <mxCell id="88" value="新規チャットルーム作成機能" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="2020" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="" style="endArrow=classic;html=1;fontColor=#3333FF;labelBorderColor=none;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="230" y="2280" as="sourcePoint"/>
+                        <mxPoint x="650" y="2280" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="93" value="" style="endArrow=classic;html=1;fontColor=#3333FF;labelBorderColor=none;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="230" y="2330" as="sourcePoint"/>
+                        <mxPoint x="650" y="2330" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="94" value="成功した場合" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;labelBackgroundColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="380" y="2240" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="失敗した場合" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;labelBackgroundColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="380" y="2290" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="root_path&lt;br&gt;つまりindex.html.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="2270" width="170" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="new.htmi.erb" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="2320" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="chat-app(試作)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="10" width="180" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
