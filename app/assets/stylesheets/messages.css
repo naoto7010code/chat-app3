@@ -73,10 +73,10 @@
   color: #333;
   padding-top: 36px;
 }
-.header-btn{
+.header-button{
   margin-top: 40px;
 }
-.chat-end-btn{
+.header-button a{
   text-decoration: none;
   color: darkred;
   border: 1px solid darkred;
